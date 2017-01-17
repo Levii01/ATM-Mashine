@@ -14,7 +14,7 @@ module TheGlobalBankingSystem
 
     def log_in(insert_pin)
       puts 'log in...'
-      if pin == insert_pin
+      if pin === insert_pin
         self.authentication = true
       else
         Errors.new.pin_is_invalid
