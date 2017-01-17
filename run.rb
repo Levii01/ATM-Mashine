@@ -16,4 +16,4 @@ my_card.log_out
 puts '================================'
 my_card.owner
 puts '================================'
-# binding.pry
+binding.pry

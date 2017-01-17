@@ -10,12 +10,22 @@ module TheGlobalBankingSystem
       puts 'Access denied: incorrect PIN.'
     end
 
+    def distable_card
+      puts 'This card is distable'
+      puts 'Contact with us to activate your card'
+    end
+
+    def block_the_card
+      puts 'System will block the card.'
+    end
+
     def no_money_account
       puts "You don't have enough money in your account."
     end
 
     def no_money_bank
-      puts "We must apologise you because we don't have enough money in this ATM."
+      puts "We must apologise you
+      because we don't have enough money in this ATM."
       puts 'You need to find another ATM or visit our bank.'
     end
   end
