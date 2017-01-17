@@ -5,16 +5,15 @@ puts '================================'
 my_card = my_account.account_card(5555)
 my_card.owner
 puts '================================'
-my_card.log_in(5555)
+set = gets.chomp
+my_card.log_in(set.to_i)
 
 puts '================================'
-my_account.account_card(5555)
 my_card.owner
 puts '================================'
 my_card.log_out
 
 puts '================================'
-my_account.account_card(5555)
 my_card.owner
 puts '================================'
 # binding.pry
