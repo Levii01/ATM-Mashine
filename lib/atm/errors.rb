@@ -29,7 +29,7 @@ module TheGlobalBankingSystem
     end
 
     def wrong_password
-      puts "Wrong password"
+      puts 'Wrong password'
     end
   end
 end

@@ -1,7 +1,7 @@
 require './lib/atm'
+log= TheGlobalBankingSystem::MyLog.new
 # log = Logger.new('log.txt')
 # log.level = Logger::DEBUG
-atm = TheGlobalBankingSystem::AtmCashCase.new
 
 account = TheGlobalBankingSystem::Account.new('Milosz', 'Sedziak', 500)
 account.display_balance
@@ -21,11 +21,12 @@ puts '================================'
 card.owner
 puts '================================'
 system 'clear'
+atm = TheGlobalBankingSystem::AtmCashCase.new
 puts atm
 
-# log.debug 'hello'
-# log.error 'world'
-# log.info 'damn'
-# log.warn 'you'
-# log.fatal 'are'
+log.log.debug 'still working'
+# log.log.error 'world'
+# log.log.info 'damn'
+# log.log.warn 'you'
+# log.log.fatal 'are'
 binding.pry

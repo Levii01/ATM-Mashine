@@ -10,16 +10,16 @@ module TheGlobalBankingSystem
     end
 
     def log_in_atm
-      unless access
-        check_password
+      if access
+        puts 'Access ATM: endable'
       else
-        puts "Access ATM: endable"
+        check_password
       end
     end
 
     def check_password
       puts "Secret password? (It's not 'secret123')"
-      print "Pw: "
+      print 'Pw: '
       password = gets.chomp
       password == 'secret123' ? unlock_atm : Errors.new.wrong_password
     end
@@ -48,12 +48,12 @@ module TheGlobalBankingSystem
 
     def unlock_atm
       self.access = true
-      puts "You are logged in"
+      puts 'You are logged in'
     end
 
     def lock_atm
       self.access = false
-      puts "You are logged out"
+      puts 'You are logged out'
     end
   end
 end
