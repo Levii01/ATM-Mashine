@@ -1,19 +1,19 @@
 require './lib/atm'
-my_account = TheGlobalBankingSystem::Account.new('Milosz', 'Sedziak', 500)
-my_account.display_balance
+account = TheGlobalBankingSystem::Account.new('Milosz', 'Sedziak', 500)
+account.display_balance
 puts '================================'
-my_card = my_account.account_card(5555)
-my_card.owner
+card = account.new_card(5555)
+card.owner
 puts '================================'
 set = gets.chomp
-my_card.log_in(set.to_i)
+card.log_in(set.to_i)
 
 puts '================================'
-my_card.owner
+card.owner
 puts '================================'
-my_card.log_out
+card.log_out
 
 puts '================================'
-my_card.owner
+card.owner
 puts '================================'
 binding.pry

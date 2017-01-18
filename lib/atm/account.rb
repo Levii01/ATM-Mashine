@@ -2,16 +2,21 @@
 module TheGlobalBankingSystem
   # operation on your account
   class Account
-    attr_accessor :name, :surname, :balance
+    attr_accessor :card, :name, :surname, :balance
 
     def initialize(name, surname, balance)
       @name = name
       @surname = surname
       @balance = balance
+      @card = nil
     end
 
-    def account_card(pin)
-      card = Card.new(pin, self)
+    def new_card(pin)
+      self.card = Card.new(pin, self)
+    end
+
+    def full_access
+      card.authentication && card.endable
     end
 
     def display_balance
