@@ -20,26 +20,25 @@ module TheGlobalBankingSystem
     end
 
     def display_balance
-      # puts pin_number == pin ? "Balance: $#{@balance}." : pin_error
-      puts "Balance: $#{@balance}."
-      # if something gone wrong.. Error
-      # Errors.new.type_error
-      # Errors.new.pin_is_invalid
-      # Errors.new.no_money_bank
-      # Errors.new.no_money_account
+      puts "Balance: $#{balance}."
     end
 
     def withdraw(amount)
-      # if pin_number == pin
-      @balance -= amount
-      puts "Withdrew #{amount}. New balance: $#{@balance}."
-      # else
-      #   puts pin_error
-      # end
+      check_withdraw(amount)
+    end
+
+    def check_withdraw(cash)
+      if balance >= cash
+        self.balance -= cash
+        puts "Withdrew #{cash}. New balance: $#{@balance}."
+      else
+        Errors.new.no_money_account
+      end
     end
 
     def charge(amount)
-      @balance += amount
+      self.balance += amount
+      puts "Withdrew #{amount}. New balance: $#{@balance}."
     end
   end
 end

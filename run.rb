@@ -16,4 +16,5 @@ card.log_out
 puts '================================'
 card.owner
 puts '================================'
+system "clear"
 binding.pry
