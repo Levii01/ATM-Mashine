@@ -2,13 +2,14 @@ require './lib/atm'
 log = TheGlobalBankingSystem::MyLog.new
 log.log.debug 'still working'
 session = TheGlobalBankingSystem::Session.new
-
 loop do
   puts
   puts '================================'
   puts 'Welcomen.'
   puts 'Insert option number'
   puts '1. Insert card'
+  puts ''
+  puts ''
   puts '9630. Log in as operator'
   puts ''
   puts '================================'

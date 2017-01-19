@@ -18,7 +18,7 @@ module TheGlobalBankingSystem
     end
 
     def log_out_atm
-      lock_atm
+      lock_atm if access
     end
 
     def display_balance

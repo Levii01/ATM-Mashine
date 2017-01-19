@@ -51,6 +51,7 @@ module TheGlobalBankingSystem
         when 4 then card.owner
         when 5 then card.log_out
         else invalid_input
+          card.log_out
         end
       end
     end
@@ -72,6 +73,7 @@ module TheGlobalBankingSystem
         when 3 then atm.display_balance
         when 4 then card.activate_card
         else invalid_input
+          atm.log_out_atm
         end
       end
     end
