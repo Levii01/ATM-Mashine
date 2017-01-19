@@ -28,6 +28,10 @@ module TheGlobalBankingSystem
       puts 'You need to find another ATM or visit our bank.'
     end
 
+    def operator_no_money_atm
+      puts "Can't withdraw, not enough money in ATM"
+    end
+
     def wrong_password
       puts 'Wrong password'
     end

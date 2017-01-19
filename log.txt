@@ -1,0 +1,28 @@
+I, [2017-01-19 10:52:45 #21136]  INFO -- : Money has been charged to ATM, amount: 100
+I, [2017-01-19 10:52:45 #21136]  INFO -- : Charge account by card: #<TheGlobalBankingSystem::Card:0x000000022545c0>, Ac: #<TheGlobalBankingSystem::Account:0x00000002254b88>
+I, [2017-01-19 10:58:16 #21136]  INFO -- : Money has been charged to ATM, amount: 500
+I, [2017-01-19 10:58:57 #21136]  INFO -- : Money has been charged to ATM, amount: 500
+I, [2017-01-19 10:58:59 #21136]  INFO -- : Money has been charged to ATM, amount: 500
+I, [2017-01-19 10:59:05 #21136]  INFO -- : Money has been charged to ATM, amount: 500
+I, [2017-01-19 10:59:07 #21136]  INFO -- : Money has been charged to ATM, amount: 500
+I, [2017-01-19 10:59:21 #21136]  INFO -- : Money has been charged to ATM, amount: 500
+I, [2017-01-19 11:18:46 #21136]  INFO -- : Money has been withdraw from ATM, amount: 100
+I, [2017-01-19 11:19:23 #22190]  INFO -- : Display balance. Ac: #<TheGlobalBankingSystem::Account:0x000000010f0f40>
+I, [2017-01-19 11:19:25 #22190]  INFO -- : Log in: Milosz Sedziak, account : #<TheGlobalBankingSystem::Account:0x000000010f0f40>
+I, [2017-01-19 11:19:25 #22190]  INFO -- : Log out: Milosz Sedziak, account : #<TheGlobalBankingSystem::Account:0x000000010f0f40>
+D, [2017-01-19 11:19:25 #22190] DEBUG -- : still working
+I, [2017-01-19 11:19:40 #22190]  INFO -- : Log in: Milosz Sedziak, account : #<TheGlobalBankingSystem::Account:0x000000010f0f40>
+I, [2017-01-19 11:21:15 #22190]  INFO -- : Money has been withdraw from ATM, amount: 100
+I, [2017-01-19 11:22:32 #22190]  INFO -- : Money has been withdraw from ATM, amount: 100
+I, [2017-01-19 11:22:41 #22388]  INFO -- : Display balance. Ac: #<TheGlobalBankingSystem::Account:0x00000002840e98>
+I, [2017-01-19 11:22:41 #22388]  INFO -- : Log in: Milosz Sedziak, account : #<TheGlobalBankingSystem::Account:0x00000002840e98>
+I, [2017-01-19 11:22:41 #22388]  INFO -- : Log out: Milosz Sedziak, account : #<TheGlobalBankingSystem::Account:0x00000002840e98>
+D, [2017-01-19 11:22:41 #22388] DEBUG -- : still working
+I, [2017-01-19 11:22:49 #22388]  INFO -- : Log in: Milosz Sedziak, account : #<TheGlobalBankingSystem::Account:0x00000002840e98>
+I, [2017-01-19 11:22:58 #22388]  INFO -- : Money has been withdraw from ATM, amount: 100
+I, [2017-01-19 11:23:37 #22483]  INFO -- : Display balance. Ac: #<TheGlobalBankingSystem::Account:0x00000001158f50>
+I, [2017-01-19 11:23:40 #22483]  INFO -- : Log in: Milosz Sedziak, account : #<TheGlobalBankingSystem::Account:0x00000001158f50>
+I, [2017-01-19 11:23:40 #22483]  INFO -- : Log out: Milosz Sedziak, account : #<TheGlobalBankingSystem::Account:0x00000001158f50>
+D, [2017-01-19 11:23:40 #22483] DEBUG -- : still working
+I, [2017-01-19 11:23:42 #22483]  INFO -- : Log in: Milosz Sedziak, account : #<TheGlobalBankingSystem::Account:0x00000001158f50>
+I, [2017-01-19 11:23:45 #22483]  INFO -- : Money has been withdraw from ATM, amount: 100,total 3900

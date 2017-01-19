@@ -1,5 +1,5 @@
 require './lib/atm'
-log= TheGlobalBankingSystem::MyLog.new
+log = TheGlobalBankingSystem::MyLog.new
 # log = Logger.new('log.txt')
 # log.level = Logger::DEBUG
 

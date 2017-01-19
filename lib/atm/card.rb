@@ -22,9 +22,7 @@ module TheGlobalBankingSystem
     end
 
     def log_out
-      if authentication
-        log_out_verification
-      end
+      log_out_verification if authentication
     end
 
     def activate_card
