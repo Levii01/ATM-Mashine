@@ -1,32 +1,42 @@
 require './lib/atm'
 log = TheGlobalBankingSystem::MyLog.new
-# log = Logger.new('log.txt')
-# log.level = Logger::DEBUG
-
-account = TheGlobalBankingSystem::Account.new('Milosz', 'Sedziak', 500)
-account.display_balance
-puts '================================'
-card = account.new_card(5)
-card.owner
-puts '================================'
-set = gets.chomp
-card.log_in(set.to_i)
-
-puts '================================'
-card.owner
-puts '================================'
-card.log_out
-
-puts '================================'
-card.owner
-puts '================================'
-system 'clear'
-atm = TheGlobalBankingSystem::AtmCashCase.new
-puts atm
-
 log.log.debug 'still working'
-# log.log.error 'world'
-# log.log.info 'damn'
-# log.log.warn 'you'
-# log.log.fatal 'are'
-binding.pry
+session = TheGlobalBankingSystem::Session.new
+
+loop do
+  puts
+  puts '================================'
+  puts 'Welcomen.'
+  puts 'Insert option number'
+  puts '1. Insert card'
+  puts '2. Log in as operator'
+  puts ''
+  puts '================================'
+
+  begin
+    case gets.chomp.to_i
+    when 1 then session.account_start
+    when 2 then session.operator
+    else session.invalid_input
+    end
+  end
+  puts 'Godbay!'
+end
+
+# account.display_balance
+# puts '================================'
+# card = account.new_card(5)
+# card.owner
+# puts '================================'
+# set = gets.chomp
+# card.log_in(set.to_i)
+#
+# puts '================================'
+# card.owner
+# puts '================================'
+# card.log_out
+#
+# puts '================================'
+# card.owner
+# puts '================================'
+# system 'clear'

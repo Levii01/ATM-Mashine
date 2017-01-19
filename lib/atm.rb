@@ -6,6 +6,7 @@ require_relative 'atm/cash_case'
 require_relative 'atm/errors'
 require_relative 'atm/account'
 require_relative 'atm/card'
+require_relative 'atm/new_session'
 # require_relative 'atm/'
 
 # The best banging system on the world :) I hope

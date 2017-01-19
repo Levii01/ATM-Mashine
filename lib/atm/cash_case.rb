@@ -21,6 +21,11 @@ module TheGlobalBankingSystem
       lock_atm
     end
 
+    def display_balance
+      log.info 'Display balance ATM'
+      puts "Balance: $#{money}."
+    end
+
     def charge_atm(amount)
       log.info "Money has been charged to ATM, amount: #{amount},total #{money}"
       puts "Money has been charged to ATM, amount: #{amount}" if access
@@ -58,7 +63,7 @@ module TheGlobalBankingSystem
     def check_password
       log.warn 'Try to log in as operator..'
       puts "Secret password? (It's not 'secret123')."
-      print 'Pw: '
+      print 'Password: '
       password = gets.chomp
       password == 'secret123' ? unlock_atm : Errors.new.wrong_password
     end

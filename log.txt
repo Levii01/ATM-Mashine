@@ -1,28 +1,37 @@
-I, [2017-01-19 10:52:45 #21136]  INFO -- : Money has been charged to ATM, amount: 100
-I, [2017-01-19 10:52:45 #21136]  INFO -- : Charge account by card: #<TheGlobalBankingSystem::Card:0x000000022545c0>, Ac: #<TheGlobalBankingSystem::Account:0x00000002254b88>
-I, [2017-01-19 10:58:16 #21136]  INFO -- : Money has been charged to ATM, amount: 500
-I, [2017-01-19 10:58:57 #21136]  INFO -- : Money has been charged to ATM, amount: 500
-I, [2017-01-19 10:58:59 #21136]  INFO -- : Money has been charged to ATM, amount: 500
-I, [2017-01-19 10:59:05 #21136]  INFO -- : Money has been charged to ATM, amount: 500
-I, [2017-01-19 10:59:07 #21136]  INFO -- : Money has been charged to ATM, amount: 500
-I, [2017-01-19 10:59:21 #21136]  INFO -- : Money has been charged to ATM, amount: 500
-I, [2017-01-19 11:18:46 #21136]  INFO -- : Money has been withdraw from ATM, amount: 100
-I, [2017-01-19 11:19:23 #22190]  INFO -- : Display balance. Ac: #<TheGlobalBankingSystem::Account:0x000000010f0f40>
-I, [2017-01-19 11:19:25 #22190]  INFO -- : Log in: Milosz Sedziak, account : #<TheGlobalBankingSystem::Account:0x000000010f0f40>
-I, [2017-01-19 11:19:25 #22190]  INFO -- : Log out: Milosz Sedziak, account : #<TheGlobalBankingSystem::Account:0x000000010f0f40>
-D, [2017-01-19 11:19:25 #22190] DEBUG -- : still working
-I, [2017-01-19 11:19:40 #22190]  INFO -- : Log in: Milosz Sedziak, account : #<TheGlobalBankingSystem::Account:0x000000010f0f40>
-I, [2017-01-19 11:21:15 #22190]  INFO -- : Money has been withdraw from ATM, amount: 100
-I, [2017-01-19 11:22:32 #22190]  INFO -- : Money has been withdraw from ATM, amount: 100
-I, [2017-01-19 11:22:41 #22388]  INFO -- : Display balance. Ac: #<TheGlobalBankingSystem::Account:0x00000002840e98>
-I, [2017-01-19 11:22:41 #22388]  INFO -- : Log in: Milosz Sedziak, account : #<TheGlobalBankingSystem::Account:0x00000002840e98>
-I, [2017-01-19 11:22:41 #22388]  INFO -- : Log out: Milosz Sedziak, account : #<TheGlobalBankingSystem::Account:0x00000002840e98>
-D, [2017-01-19 11:22:41 #22388] DEBUG -- : still working
-I, [2017-01-19 11:22:49 #22388]  INFO -- : Log in: Milosz Sedziak, account : #<TheGlobalBankingSystem::Account:0x00000002840e98>
-I, [2017-01-19 11:22:58 #22388]  INFO -- : Money has been withdraw from ATM, amount: 100
-I, [2017-01-19 11:23:37 #22483]  INFO -- : Display balance. Ac: #<TheGlobalBankingSystem::Account:0x00000001158f50>
-I, [2017-01-19 11:23:40 #22483]  INFO -- : Log in: Milosz Sedziak, account : #<TheGlobalBankingSystem::Account:0x00000001158f50>
-I, [2017-01-19 11:23:40 #22483]  INFO -- : Log out: Milosz Sedziak, account : #<TheGlobalBankingSystem::Account:0x00000001158f50>
-D, [2017-01-19 11:23:40 #22483] DEBUG -- : still working
-I, [2017-01-19 11:23:42 #22483]  INFO -- : Log in: Milosz Sedziak, account : #<TheGlobalBankingSystem::Account:0x00000001158f50>
-I, [2017-01-19 11:23:45 #22483]  INFO -- : Money has been withdraw from ATM, amount: 100,total 3900
+W, [2017-01-19 14:51:19 #9709]  WARN -- : Try to log in as operator..
+W, [2017-01-19 14:51:23 #9709]  WARN -- : Success log in as operator.
+I, [2017-01-19 14:51:40 #9709]  INFO -- : Display balance ATM
+D, [2017-01-19 14:52:19 #9991] DEBUG -- : still working
+W, [2017-01-19 14:52:21 #9991]  WARN -- : Try to log in as operator..
+W, [2017-01-19 14:52:31 #9991]  WARN -- : Success log in as operator.
+I, [2017-01-19 14:52:46 #9991]  INFO -- : Money has been charged to ATM, amount: 400,total 4000
+I, [2017-01-19 14:53:07 #9991]  INFO -- : Display balance ATM
+D, [2017-01-19 14:53:50 #10106] DEBUG -- : still working
+W, [2017-01-19 14:53:51 #10106]  WARN -- : Try to log in as operator..
+W, [2017-01-19 14:53:54 #10106]  WARN -- : Success log in as operator.
+D, [2017-01-19 14:54:50 #10211] DEBUG -- : still working
+W, [2017-01-19 14:54:51 #10211]  WARN -- : Try to log in as operator..
+W, [2017-01-19 14:54:55 #10211]  WARN -- : Success log in as operator.
+W, [2017-01-19 14:55:08 #10211]  WARN -- : Endable card: Milosz Sedziak, account : #<TheGlobalBankingSystem::Account:0x00000002586ba8>
+D, [2017-01-19 14:56:45 #10510] DEBUG -- : still working
+I, [2017-01-19 14:56:49 #10510]  INFO -- : Log in: Milosz Sedziak, account : #<TheGlobalBankingSystem::Account:0x00000001bbad18>
+W, [2017-01-19 14:57:43 #10510]  WARN -- : Try to log in as operator..
+W, [2017-01-19 14:57:46 #10510]  WARN -- : Success log in as operator.
+I, [2017-01-19 14:57:54 #10510]  INFO -- : Money has been withdraw from ATM, amount: 300,total 3700
+I, [2017-01-19 14:58:00 #10510]  INFO -- : Display balance ATM
+I, [2017-01-19 14:58:16 #10510]  INFO -- : Money has been charged to ATM, amount: 100,total 3700
+I, [2017-01-19 14:58:22 #10510]  INFO -- : Display balance ATM
+I, [2017-01-19 14:59:02 #10510]  INFO -- : Money has been withdraw from ATM, amount: 3500,total 300
+I, [2017-01-19 14:59:08 #10510]  INFO -- : Display balance ATM
+I, [2017-01-19 14:59:19 #10510]  INFO -- : Log in: Milosz Sedziak, account : #<TheGlobalBankingSystem::Account:0x00000001bbad18>
+F, [2017-01-19 14:59:30 #10510] FATAL -- : Can't withdraw, not enough money in ATM
+D, [2017-01-19 15:12:21 #12014] DEBUG -- : still working
+W, [2017-01-19 15:12:23 #12014]  WARN -- : Try to log in as operator..
+W, [2017-01-19 15:12:26 #12014]  WARN -- : Success log in as operator.
+D, [2017-01-19 15:15:39 #12414] DEBUG -- : still working
+I, [2017-01-19 15:15:43 #12414]  INFO -- : Log in: Milosz Sedziak, account : #<TheGlobalBankingSystem::Account:0x000000021b2d10>
+W, [2017-01-19 15:16:50 #12414]  WARN -- : Try to log in as operator..
+W, [2017-01-19 15:16:54 #12414]  WARN -- : Success log in as operator.
+I, [2017-01-19 15:19:33 #12414]  INFO -- : Display balance ATM
+I, [2017-01-19 15:19:39 #12414]  INFO -- : Log in: Milosz Sedziak, account : #<TheGlobalBankingSystem::Account:0x000000021b2d10>
+I, [2017-01-19 15:19:41 #12414]  INFO -- : Log out: Milosz Sedziak, account : #<TheGlobalBankingSystem::Account:0x000000021b2d10>

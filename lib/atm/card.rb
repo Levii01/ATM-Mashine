@@ -26,7 +26,8 @@ module TheGlobalBankingSystem
     end
 
     def activate_card
-      print 'Insert a special password: '
+      puts "Insert a special password: (It's not 'secret')"
+      print 'Password: '
       special = gets.chomp
       unlock if special == 'secret'
     end
@@ -57,6 +58,7 @@ module TheGlobalBankingSystem
       if pin == inserted
         self.authentication = true
         log.info "Log in: #{account.name} #{account.surname}, account : #{account}"
+        puts 'Correct! You are logged in.'
       else
         log.warn "Log in fail: wrong pin, distable card #{self} for account :#{account}"
         Errors.new.pin_is_invalid
