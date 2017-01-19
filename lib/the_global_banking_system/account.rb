@@ -1,4 +1,4 @@
-# The best banging system on the world :)
+# The best banking system on the world :)
 module TheGlobalBankingSystem
   # operation on your account
   class Account < MyLog
@@ -22,8 +22,8 @@ module TheGlobalBankingSystem
 
     def withdraw(amount, atm)
       if balance >= amount
-        if atm.enough_atm?(amount)
-          atm.withdraw_atm(amount)
+        if atm.enough_money_atm?(amount)
+          atm.withdraw_money_atm(amount)
           self.balance -= amount
           puts "Withdrew #{amount}. New balance: $#{@balance}."
         else

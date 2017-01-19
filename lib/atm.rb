@@ -1,14 +1,12 @@
-# in this file require_relative all file and Module
 require 'pry'
 require 'logger'
-require_relative 'atm/logger'
-require_relative 'atm/cash_case'
-require_relative 'atm/errors'
-require_relative 'atm/account'
-require_relative 'atm/card'
-require_relative 'atm/new_session'
-# require_relative 'atm/'
+require_relative 'the_global_banking_system/my_log'
+require_relative 'the_global_banking_system/cash_case'
+require_relative 'the_global_banking_system/errors'
+require_relative 'the_global_banking_system/account'
+require_relative 'the_global_banking_system/card'
+require_relative 'the_global_banking_system/session'
 
-# The best banging system on the world :) I hope
+# The best banking system on the world :) I hope
 module TheGlobalBankingSystem
 end

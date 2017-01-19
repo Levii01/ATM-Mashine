@@ -1,4 +1,4 @@
-# The best banging system on the world :)
+# The best banking system on the world :)
 module TheGlobalBankingSystem
   # control money in ATM
   class AtmCashCase < MyLog
@@ -11,7 +11,7 @@ module TheGlobalBankingSystem
 
     def log_in_atm
       if access
-        puts 'Access ATM: endable.'
+        puts 'Access ATM: enabled.'
       else
         check_password
       end
@@ -32,8 +32,8 @@ module TheGlobalBankingSystem
       self.money += amount
     end
 
-    def withdraw_atm(amount)
-      if enough_atm?(amount)
+    def withdraw_money_atm(amount)
+      if enough_money_atm?(amount)
         self.money -= amount
         log.info "Money has been withdraw from ATM, amount: #{amount},total #{money}"
         puts "Money has been withdraw from ATM, amount: #{amount}" if access
@@ -43,20 +43,9 @@ module TheGlobalBankingSystem
       end
     end
 
-    def enough_atm?(value)
+    def enough_money_atm?(value)
       self.money >= value
     end
-
-    # def check_atm_withdraw(cash)
-    #   if money >= cash
-    #     self.money -= cash
-    #     log.warn "Money has been withdraw from ATM, amount: #{cash}"
-    #     puts "Money has been withdraw from ATM, amount: #{cash}" if access
-    #   else
-    #     Errors.new.operator_no_money_atm if access
-    #     log.warn "Can't withdraw, not enough money in ATM"
-    #   end
-    # end
 
     private
 

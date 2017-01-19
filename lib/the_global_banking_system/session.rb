@@ -1,4 +1,4 @@
-# The best banging system on the world :)
+# The best banking system on the world :)
 module TheGlobalBankingSystem
   # start session for new user
   class Session
@@ -17,7 +17,7 @@ module TheGlobalBankingSystem
       pin = gets.chomp
       card.log_in(pin.to_i)
 
-      account_option if full_access
+      account_option if full_access?
     end
 
     def operator
@@ -26,11 +26,18 @@ module TheGlobalBankingSystem
       operator_option if atm.access
     end
 
+    def invalid_input
+      system 'clear'
+      puts '................................'
+      puts 'Somethings gone wrong'
+      puts 'Please try again!'
+    end
+
     private
 
     def account_option
       puts 'Insert option number'
-      puts '1. Charge account'
+      puts '1. Fund account'
       puts '2. Withdraw money'
       puts '3. Show balance'
       puts '4. Owner information'
@@ -71,7 +78,7 @@ module TheGlobalBankingSystem
 
     def add_money
       puts ''
-      puts '1. Charge account:'
+      puts '1. Fund account:'
       puts 'How much money you want to charge?'
       print 'Amount: '
       add_amount = gets.chomp
@@ -87,11 +94,6 @@ module TheGlobalBankingSystem
       remove_amount = gets.chomp
       account.withdraw(remove_amount.to_i, atm)
       puts ''
-    end
-
-    def invalid_input
-      puts 'Somethings gone wrong'
-      puts 'Pleasery again!'
     end
 
     def atm_add_money
@@ -110,12 +112,12 @@ module TheGlobalBankingSystem
       puts 'How much money you want to withdraw?'
       print 'Amount: '
       remove_amount_atm = gets.chomp
-      atm.withdraw_atm(remove_amount_atm.to_i)
+      atm.withdraw_money_atm(remove_amount_atm.to_i)
       puts ''
     end
 
-    def full_access
-      card.authentication && card.endable
+    def full_access?
+      card.authentication && card.enabled
     end
   end
 end

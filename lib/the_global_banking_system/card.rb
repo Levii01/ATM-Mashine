@@ -1,19 +1,19 @@
-# The best banging system on the world :)
+# The best banking system on the world :)
 module TheGlobalBankingSystem
   # card will use to veryficate owner of the account
   class Card < MyLog
-    attr_accessor :pin, :authentication, :endable
+    attr_accessor :pin, :authentication, :enabled
     attr_reader :account
 
     def initialize(pin, account)
       @pin = pin
       @account = account
       @authentication = false
-      @endable = true
+      @enabled = true
     end
 
     def log_in(inserted_pin)
-      if endable
+      if enabled
         log_in_verification(inserted_pin)
       else
         log.info "Log in: card is distable, account :#{account}"
@@ -30,6 +30,8 @@ module TheGlobalBankingSystem
       print 'Password: '
       special = gets.chomp
       unlock if special == 'secret'
+      puts "\nCard #{self}"
+      puts 'was activated!'
     end
 
     def owner
@@ -38,19 +40,19 @@ module TheGlobalBankingSystem
       puts "Surname: #{account.surname}"
       print 'Pin: '
       puts authentication ? pin : 'first you must log in'
-      puts "Active card: #{endable}"
+      puts "Active card: #{enabled}"
     end
 
     private
 
     def lock
-      self.endable = false
+      self.enabled = false
       log.warn "Distable card: #{account.name} #{account.surname}, account : #{account}"
     end
 
     def unlock
-      self.endable = true
-      log.warn "Endable card: #{account.name} #{account.surname}, account : #{account}"
+      self.enabled = true
+      log.warn "enabled card: #{account.name} #{account.surname}, account : #{account}"
     end
 
     def log_in_verification(inserted)

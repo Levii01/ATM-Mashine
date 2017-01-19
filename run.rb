@@ -9,34 +9,16 @@ loop do
   puts 'Welcomen.'
   puts 'Insert option number'
   puts '1. Insert card'
-  puts '2. Log in as operator'
+  puts '9630. Log in as operator'
   puts ''
   puts '================================'
 
   begin
     case gets.chomp.to_i
     when 1 then session.account_start
-    when 2 then session.operator
+    when 9630 then session.operator
     else session.invalid_input
     end
   end
   puts 'Godbay!'
 end
-
-# account.display_balance
-# puts '================================'
-# card = account.new_card(5)
-# card.owner
-# puts '================================'
-# set = gets.chomp
-# card.log_in(set.to_i)
-#
-# puts '================================'
-# card.owner
-# puts '================================'
-# card.log_out
-#
-# puts '================================'
-# card.owner
-# puts '================================'
-# system 'clear'
