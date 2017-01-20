@@ -65,6 +65,7 @@ module TheGlobalBankingSystem
 
     def lock_atm
       self.access = false
+      puts ''
       puts 'You are logged out.'
       log.warn 'Log out operator.'
     end

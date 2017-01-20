@@ -1,8 +1,10 @@
 # ATM CashMashine
-Pin to account: '5555'
-Operator password: 'secret123'
-Password to unlock card: 'secret'
-Log in as operator: at strart insert > 9630
+To start: ruby run.rb
+
+Pin to account: '5555'.
+Operator password: 'secret123'.
+Password to unlock card: 'secret'.
+Log file > log.txt
 
 The ATM Machine
 
@@ -17,4 +19,3 @@ Display an error when a person tries to withdraw more money than they have in th
 Handle the case in which the person tries to withdraw more money than there is available in the ATM.
 Add a feature that saves all ATM operations into a log file.
 An ATM operator puts money into the ATM.
-c

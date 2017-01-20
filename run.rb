@@ -21,5 +21,7 @@ loop do
     else session.invalid_input
     end
   end
+  session.atm.log_out_atm if session.atm.access
+  session.card.log_out if session.card.authentication
   puts 'Godbay!'
 end

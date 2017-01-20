@@ -51,7 +51,7 @@ module TheGlobalBankingSystem
         when 4 then card.owner
         when 5 then card.log_out
         else invalid_input
-          card.log_out
+             card.log_out
         end
       end
     end
@@ -63,7 +63,8 @@ module TheGlobalBankingSystem
       puts '1. Add money to ATM'
       puts '2. Withdraw money from ATM'
       puts '3. Show ATM balance'
-      puts '4. Active user card'
+      puts '4. Activate user card'
+      puts '5. Log out'
       print 'Select: '
 
       begin
@@ -72,8 +73,9 @@ module TheGlobalBankingSystem
         when 2 then atm_withdraw
         when 3 then atm.display_balance
         when 4 then card.activate_card
+        when 5 then atm.log_out_atm
         else invalid_input
-          atm.log_out_atm
+             atm.log_out_atm
         end
       end
     end

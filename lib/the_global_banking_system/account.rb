@@ -40,7 +40,7 @@ module TheGlobalBankingSystem
       user_charge_atm(amount, atm)
       self.balance += amount
       log.info "Charge account by card: #{card}, Ac: #{self}"
-      puts "Withdrew #{amount}. New balance: $#{@balance}."
+      puts "Charge #{amount}. New balance: $#{@balance}."
     end
 
     private

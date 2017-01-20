@@ -70,6 +70,7 @@ module TheGlobalBankingSystem
     end
 
     def log_out_verification
+      puts ''
       puts 'log out...'
       log.info "Log out: #{account.name} #{account.surname}, account : #{account}"
       self.authentication = false
